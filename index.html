@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Games Studio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+       
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="image/logo.png" alt="Creative Games Studio"> <!-- Placeholder for logo -->
+        </div>
+    
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+       
+        <nav>
+            <ul>
+                <li class="nav-item active"><a href="#">Home</a></li>
+                <li class="nav-item">
+                    <a href="#">Games &#9662;</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Chronicles of Drunagor</a></li>
+                        <li><a href="#">DANTE: Inferno</a></li>
+                        <li><a href="#">The Towers of Arkhanos</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#">News</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
+                <li class="nav-item"><a href="#">Store</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1 class="title-dante">DANTE: Inferno</h1>
+            <p class="description">Explore the nine circles of Inferno through a deep, branching storyline, and face legendary foes in cinematic boss fights.</p>
+            <p class="description">Late Pledge live on Gamefound.</p>
+            <br>
+        <a href="#" class="btn-follow">Follow Now</a>
+        </div>
+    </div>
+
+    <div class="games">
+        <div class="game">
+            <img src="image/Arkhanos.png" alt="Arkhanos">
+        </div>
+        <div class="game">
+            <img src="image/chronicles-of-drunagor.png" alt="Chronicles of Drunagor">
+        </div>
+        <div class="game">
+            <img src="image/Dante.png" alt="Dante">
+        </div>
+    </div>
+    <div class="tittle-new">
+        <h2>WHAT'S NEW?</h2>
+    </div>
+    <div class="whats-new carousel-container">
+        <div class="carousel">
+            <div class="carousel-slide">
+                <img src="image/whats-new.webp" alt="Highlight 1">
+                <div class="carousel-content">
+                    <h2>Essen SPIEL 2023 Highlights</h2>
+                    <p>Check out the highlights from the CGS booth! There is a full gallery...</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="image/news2.webp" alt="Highlight 2">
+                <div class="carousel-content">
+                    <h2></h2>
+                    <p></p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="image/news3.webp" alt="Highlight 3">
+                <div class="carousel-content">
+                    <h2></h2>
+                    <p></p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-prev">&#10094;</button>
+        <button class="carousel-next">&#10095;</button>
+    </div>
+    
+    <script>
+     function toggleMenu() {
+    const navUl = document.querySelector('nav ul');
+    navUl.classList.toggle('active');
+}
+
+document.querySelector('.menu-toggle').addEventListener('click', toggleMenu);
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+    const carousel = document.querySelector('.whats-new .carousel');
+    const slides = document.querySelectorAll('.whats-new .carousel-slide');
+    const prevButton = document.querySelector('.whats-new .carousel-prev');
+    const nextButton = document.querySelector('.whats-new .carousel-next');
+
+    let currentIndex = 0;
+
+    function showSlide(index) {
+        const slideWidth = slides[0].clientWidth;
+        carousel.style.transform = `translateX(${-index * slideWidth}px)`;
+    }
+
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+    });
+
+    prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+    });
+});
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('.mobile-navbar').classList.toggle('active');
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const navItems = document.querySelectorAll('.nav-item');
+
+    navItems.forEach(item => {
+        item.addEventListener('mouseenter', function() {
+            item.classList.add('focus');
+        });
+
+        item.addEventListener('mouseleave', function() {
+            item.classList.remove('focus');
+        });
+    });
+});
+
+
+    </script>
+
+    <div class="newsletter">
+        <div class="newsletter-content">
+            <img src="image/newsletter-icon.png" alt="Envelope Icon" class="newsletter-icon">
+            <div class="newsletter-text">
+                <h3>DON'T MISS ANY NEWS</h3>
+                <p>Subscribe to the CGS Newsletter and stay updated with the latest information about our past and upcoming crowdfunding campaigns, game releases, and other news from our studio.</p>
+            </div>
+            <form action="#">
+            
+                <input type="email" placeholder="Email">
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="image/logo.png" alt="Creative Games Studio Logo">
+                <p>Billings, MT - USA</p>
+            </div>
+            <div class="footer-info">
+                <h4>Info</h4>
+                <ul>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Social media</h4>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-discord"></i></a></li>
+                </ul>
+                <a href="#" class="contact-button">Contact us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; All rights reserved @ Creative Games Studio LLC</p>
+        </div>
+    </footer>
+    

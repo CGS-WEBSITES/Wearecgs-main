@@ -1,0 +1,535 @@
+@font-face {
+    font-family: 'Futura Md BT';
+    src: url('caminho/para/futura-md-bt.woff2') format('woff2'),
+         url('caminho/para/futura-md-bt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Futura Md BT', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+header {
+    background-color: #000; /* Fundo preto */
+    padding: 10px 20px; /* Espaçamento ao redor */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center; /* Alinhar verticalmente */
+    justify-content: space-between; /* Espaçar logo e outros elementos */
+}
+
+.logo {
+    margin-right: auto; /* Mantém o logo à esquerda */
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centraliza o menu */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0 auto; /* Garante que o menu seja centralizado */
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px; /* Espaço entre os itens do menu */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav a:hover, nav a:focus {
+    color: #32CD32; /* Cor verde ao passar o mouse ou foco */
+}
+
+nav ul li.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #32CD32;
+    margin-top: 5px;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Estilo para dropdown */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: white; /* Fundo branco para o dropdown */
+    padding: 10px 0;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.dropdown li {
+    padding: 10px 20px;
+}
+
+.dropdown li a {
+    color: black; /* Texto preto no dropdown */
+    font-size: 14px;
+}
+
+.dropdown li a:hover {
+    background-color: #f0f0f0;
+    color: #32CD32; /* Cor verde ao passar o mouse no dropdown */
+}
+
+nav ul li:hover .dropdown,
+nav ul li.focus .dropdown {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.search-icon {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: auto; /* Alinha o ícone de pesquisa à direita */
+}
+
+.search-icon:hover {
+    color: #32CD32; /* Cor verde ao passar o mouse */
+}
+
+.menu-toggle {
+    display: none; /* Inicialmente escondido para desktop */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.menu-toggle span {
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+}
+
+/* Estilo para mobile */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex; /* Exibe o menu-toggle no mobile */
+    }
+
+    nav ul {
+        display: none; /* Esconde o menu normal no mobile */
+        flex-direction: column;
+        width: 100%;
+        background-color: #000;
+        position: absolute;
+        top: 60px; /* Ajustar de acordo com a altura do header */
+        right: 0;
+        z-index: 1000;
+    }
+
+    nav ul.active {
+        display: flex; /* Mostra o menu ao clicar */
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 10px 0;
+        margin: 0;
+        border-bottom: 1px solid #333;
+    }
+}
+
+    .search-icon {
+        margin-left: 10px;
+    }
+
+
+
+
+    header {
+        padding: 5px 20px; /* Reduz a largura da padding na versão mobile */
+    }
+
+    .hero {
+        margin-top: 50px; /* Ajusta a margem superior para compensar o header menor */
+    }
+
+
+.tittle-new h2 {
+    margin-top: 50px;
+    margin-left: 20px; /* Adiciona uma margem à esquerda para empurrar o texto */
+}
+
+/* Carrossel para .whats-new */
+.whats-new.carousel-container {
+    position: relative;
+    width: 95%; /* Ajusta a largura do carrossel para 80% da largura total da página */
+    margin: 10px auto; /* Centraliza o carrossel na página */
+    overflow: hidden;
+    background-color: #000; /* Ajuste de cor de fundo */
+}
+
+.whats-new .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.whats-new .carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.whats-new .carousel-slide img {
+    width: 100%;
+    height: 650px; /* Aumentar a altura para preencher mais espaço */
+    object-fit: cover; /* Mantém a imagem ajustada ao contêiner sem distorcer */
+}
+
+.whats-new .carousel-prev, 
+.whats-new .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.whats-new .carousel-prev {
+    left: 10px;
+}
+
+.whats-new .carousel-next {
+    right: 10px;
+}
+
+/* Ajustes para conteúdo textual sobreposto */
+.whats-new .carousel-slide .carousel-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+
+.whats-new .carousel-slide .carousel-content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.whats-new .carousel-slide .carousel-content p {
+    font-size: 18px;
+}
+
+.whats-new .carousel-slide .carousel-content a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.whats-new .carousel-slide .carousel-content a:hover {
+    background-color: white;
+    color: #000;
+}
+
+/* Hero */
+.hero {
+    background-image: url('image/bg_home.png'); /* Placeholder for background image */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+    margin-top: 60px; /* Ajuste para compensar o menu fixo */
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero a {
+    color: white;
+    background-color: green;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 15px; /* Espaçamento superior para o botão */
+    text-align: center; /* Centraliza o texto dentro do botão */
+}
+
+.hero a:hover {
+    background-color: #28a745; /* Um verde um pouco mais escuro no hover */
+}
+
+/* Games */
+.games {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.game {
+    margin: 0 10px;
+}
+
+.game img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Tittle New */
+.tittle-new h2 {
+    margin-top: 50px;
+}
+
+/* Newsletter */
+.newsletter {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.newsletter-icon {
+    width: 150px;
+    height: auto;
+    margin-right: 30px;
+}
+
+.newsletter-text {
+    text-align: left;
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+.newsletter-text h3 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.newsletter-text p {
+    font-size: 16px;
+    margin: 5px 0 0;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.newsletter input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.newsletter input[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    .newsletter-content {
+        flex-direction: column; /* Alinha o conteúdo em coluna no mobile */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .newsletter-icon {
+        margin-bottom: 20px; /* Adiciona espaço abaixo do ícone no mobile */
+        margin-right: 0; /* Remove a margem direita */
+    }
+
+    .newsletter form {
+        flex-direction: column; /* Alinha o formulário em coluna no mobile */
+        align-items: center;
+    }
+
+    .newsletter input[type="email"],
+    .newsletter input[type="submit"] {
+        width: 100%; /* Faz com que os campos ocupem toda a largura no mobile */
+        max-width: none; /* Remove a largura máxima */
+    }
+
+   
+    .newsletter input[type="submit"] {
+        margin-top: 10px; /* Adiciona espaço acima no mobile */
+        margin-right: 0; /* Remove a margem direita */
+    }
+}
+
+.description{
+    text-align: justify;
+    margin-left: 100px;
+}
+.title-dante{
+    text-align: justify;
+    margin-left: 100px;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-logo img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-info, .footer-social {
+    text-align: left;
+}
+
+.footer-info h4, .footer-social h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-info ul, .footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-info ul li, .footer-social ul li {
+    margin-bottom: 5px;
+}
+
+.footer-info ul li a, .footer-social ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-info ul li a:hover, .footer-social ul li a:hover {
+    color: #aaa;
+}
+
+.footer-social ul {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social ul li a {
+    font-size: 20px;
+}
+        
+        .contact-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #5cb85c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        
+        .contact-button:hover {
+            background-color: #4cae4c;
+        }
+        
+        .footer-bottom {
+            background-color: #5cb85c;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            color: white;
+        }
+        
+        .footer-bottom p {
+            margin: 0;
+        }
+        
+   
