@@ -315,6 +315,7 @@ nav ul li.focus .dropdown {
     text-align: center;
     padding-top: 150px;
     margin-top: 60px; /* Ajuste para compensar o menu fixo */
+
 }
 
 .hero2 h1 {
@@ -349,7 +350,6 @@ nav ul li.focus .dropdown {
     color: white;
     text-align: center;
     padding-top: 150px;
-    margin-top: 60px; /* Ajuste para compensar o menu fixo */
 }
 
 .hero4 h1 {
@@ -384,7 +384,6 @@ nav ul li.focus .dropdown {
     color: white;
     text-align: center;
     padding-top: 150px;
-    margin-top: 60px; /* Ajuste para compensar o menu fixo */
 }
 
 .hero3 h1 {
@@ -541,8 +540,66 @@ nav ul li.focus .dropdown {
     margin-left: 100px;
 }
 
+/* Buttons */
+.button-dante
+{
+    background-image: url("image/button-dante.png");
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 190px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
 
 
+
+.button-cod
+{
+    background-image: url("image/button-cod.png");
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 190px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.button-arkhanos
+{
+    background-image: url("image/button-arkhanos.png");
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 190px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
 /* Footer */
 footer {
     background-color: #000;
