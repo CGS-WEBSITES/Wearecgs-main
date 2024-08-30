@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'Futura Md BT';
     src: url('caminho/para/futura-md-bt.woff2') format('woff2'),
@@ -301,6 +302,110 @@ nav ul li.focus .dropdown {
 }
 
 .hero a:hover {
+    background-color: #28a745; /* Um verde um pouco mais escuro no hover */
+}
+/* Hero 2 */
+.hero2 {
+    background-image: url('image/dante-games.png'); /* Placeholder for background image */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+    margin-top: 60px; /* Ajuste para compensar o menu fixo */
+}
+
+.hero2 h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero2 a {
+    color: white;
+    background-color: green;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 15px; /* Espaçamento superior para o botão */
+    text-align: center; /* Centraliza o texto dentro do botão */
+}
+
+.hero2 a:hover {
+    background-color: #28a745; /* Um verde um pouco mais escuro no hover */
+}
+
+/* Hero4 */
+.hero4 {
+    background-image: url('image/arkhanos-games.png'); /* Placeholder for background image */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+    margin-top: 60px; /* Ajuste para compensar o menu fixo */
+}
+
+.hero4 h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero4 a {
+    color: white;
+    background-color: green;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 15px; /* Espaçamento superior para o botão */
+    text-align: center; /* Centraliza o texto dentro do botão */
+}
+
+.hero4 a:hover {
+    background-color: #28a745; /* Um verde um pouco mais escuro no hover */
+}
+
+/* Hero3 */
+.hero3 {
+    background-image: url('image/cod-games.png'); /* Placeholder for background image */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+    margin-top: 60px; /* Ajuste para compensar o menu fixo */
+}
+
+.hero3 h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero3 a {
+    color: white;
+    background-color: green;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 15px; /* Espaçamento superior para o botão */
+    text-align: center; /* Centraliza o texto dentro do botão */
+}
+
+.hero3 a:hover {
     background-color: #28a745; /* Um verde um pouco mais escuro no hover */
 }
 
