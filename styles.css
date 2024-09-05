@@ -411,16 +411,474 @@ nav ul li.focus .dropdown {
 .hero3 a:hover {
     background-color: #28a745; /* Um verde um pouco mais escuro no hover */
 }
+/* CoD */
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #1a1a1a;
+}
+
+header .logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    margin-top: -110px;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-around;
+    background-color: #4CAF50;
+    padding: 10px;
+    color: white;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.box-contents, .key-features, .explore, .products {
+    padding: 40px;
+    text-align: center;
+}
+
+.box-contents ul {
+    list-style-type: none;
+}
+
+.btn-purchase, .btn-explore {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.feature-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.feature-item {
+    flex: 1;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-item {
+    background-color: #e0e0e0;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+}
+.overlay-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 50%;
+}
+/*corebox*//*corebox*//*corebox*//*corebox*//*corebox*//*corebox*//*corebox*/
+
+
+.unleash-section {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 200px;
+    margin-top: 200px;
+    background-color: #f5f5f5;
+}
+
+.unleash-content {
+    
+    width: 50%;
+    padding-right: 20px;
+}
+
+.unleash-content h1 {
+    
+    color: #4CAF50;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.unleash-content p {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.unleash-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Box Contents Section */
+.box-contents {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+.box-contents h2 {
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.content-grid {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.content-grid ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.content-grid ul li {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    position: relative;
+    padding-left: 20px;
+    color: white;
+}
+
+/* Estilo para o marcador de lista */
+.content-grid ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #a7db8b; /* Cor dos bullets */
+    font-size: 20px;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Key Features Section */
+.key-features {
+    background-color: #f5f5f5;
+    padding: 40px;
+    text-align: center;
+}
+
+.key-features h2 {
+    color: #4CAF50;
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.feature-item {
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.feature-item h3 {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.feature-item em {
+    font-size: 14px;
+    color: #666;
+    display: block;
+    margin-top: 10px;
+}
+
+
+/* Expansions Section */
+.expansions-section {
+    background-color: #4CAF50;
+    padding: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.expansions-section h2 {
+    font-family: Arial, sans-serif;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.expansions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    width: 60%;
+}
+
+.expansion-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Explore Drunagor Section */
+.explore-drunagor {
+    background-image: url("image/explore.png");
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 35%;
+    text-align: left;
+}
+
+.explore-drunagor h3 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.explore-drunagor p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn-explore {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-explore:hover {
+    background-color: #45a049;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Tab Section Styles */
+.tab-section {
+    margin: 20px;
+}
+
+.tab-menu {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.tab-button.active {
+    background-color: #333;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Content Grid for Guides */
+.content-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.content-column {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-column h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Buttons for Guides */
+.content-btn {
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.content-btn:hover {
+    background-color: #45a049;
+}
+
+/* Content Grid for Digital Files */
+.content-grid.digital {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+
+
+
+
+
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.footer-logo img {
+    height: 60px;
+}
+
+.footer-info ul {
+    list-style-type: none;
+}
+
+.footer-info ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-social ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
 
 /* Games */
 .games {
+    position: relative;
     display: flex;
     justify-content: center;
     margin: 20px 0;
 }
 
 .game {
-    margin: 0 10px;
+    margin: -45px 10px 0px 10px;
 }
 
 .game img {
