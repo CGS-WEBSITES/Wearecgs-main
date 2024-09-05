@@ -311,12 +311,12 @@ nav ul li.focus .dropdown {
     background-image: url('image/dante-games.png'); /* Placeholder for background image */
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 100%;
     position: relative;
     color: white;
     text-align: center;
-    padding-top: 150px;
-    margin-top: 60px; /* Ajuste para compensar o menu fixo */
+    padding-top: 500px;
+    margin-top: 100px; /* Ajuste para compensar o menu fixo */
 
 }
 
@@ -349,12 +349,13 @@ nav ul li.focus .dropdown {
     background-image: url('image/arkhanos-games.png'); /* Placeholder for background image */
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 100%;
     position: relative;
     color: white;
     text-align: center;
-    padding-top: 150px;
-}
+    padding-top: 500px;
+ 
+   }
 
 .hero4 h1 {
     font-size: 36px;
@@ -383,11 +384,11 @@ nav ul li.focus .dropdown {
     background-image: url('image/cod-games.png'); /* Placeholder for background image */
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 100%;
     position: relative;
     color: white;
     text-align: center;
-    padding-top: 150px;
+    padding-top: 500px;
 }
 
 .hero3 h1 {
@@ -1007,17 +1008,17 @@ footer {
 {
     background-image: url("image/button-dante.png");
     position: absolute;
-    bottom: 20px;
+    bottom: 2%;
     left: 50%;
     transform: translateX(-50%);
-    width: 190px;
-    height: 48px;
+    width: 230px;
+    height:65px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     border: none;
     cursor: pointer;
 }
@@ -1028,17 +1029,17 @@ footer {
 {
     background-image: url("image/button-cod.png");
     position: absolute;
-    bottom: 20px;
+    bottom: 2%;
     left: 50%;
     transform: translateX(-50%);
-    width: 190px;
-    height: 48px;
+    width: 230px;
+    height:65px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     border: none;
     cursor: pointer;
 }
@@ -1048,17 +1049,17 @@ footer {
 {
     background-image: url("image/button-arkhanos.png");
     position: absolute;
-    bottom: 20px;
+    bottom: 2%;
     left: 50%;
     transform: translateX(-50%);
-    width: 190px;
-    height: 48px;
+    width: 230px;
+    height:65px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     border: none;
     cursor: pointer;
 }
